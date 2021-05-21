@@ -1,0 +1,80 @@
+.logo {
+    margin-left: 15%;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -160px;
+    width: 400px;
+    height: 310px;
+    background-color: #ffffff;
+}
+
+.signUp-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -160px;
+    width: 400px;
+    height: 310px;
+    background-color: #ffffff;
+    display: none;
+}
+
+.login-title {
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.login-form {
+    padding: 20px 30px;
+}
+
+.user-box,
+.psw-box,
+.SignUpUser,
+.signUpPsw,
+.signUpPswAgain {
+    height: 35px;
+    border: 1px solid #cccccc;
+    margin-top: 12px;
+}
+
+.user-box>i,
+.psw-box>i,
+.SignUpUser>I,
+.signUpPsw>i,
+.signUpPswAgain>I {
+    height: 35px;
+    line-height: 35px;
+    margin-left: 10px;
+}
+
+.btn-box {
+    height: 35px;
+    margin-top: 12px;
+    line-height: 35px;
+    background-color: #4bb2ff;
+    text-align: center;
+}
+
+.btn-box>input {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.toSignUp,
+.toLogin {
+    float: right;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.toSignUp:hover,
+.toLogin:hover {
+    color: #777777;
+}
