@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录界面</title>
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/lib/iconfont/iconfont.css">
     <link rel="stylesheet" href="/assets/css/login.css">
+
 </head>
 
 <body>
@@ -16,49 +18,53 @@
         <img src="/assets/images/logo.png" alt="">
     </div>
     <div class="login-box">
-        <form action="" class="login-form">
+        <form class="login-form layui-form ">
             <div class="login-title">
                 <img src="/assets/images/login_title.png" alt="">
             </div>
-            <div class="user-box">
+            <div class="user-box layui-form-item">
                 <i class="iconfont  icon-denglu1"></i>
-                <input type="text" class="userName" placeholder="请输入用户名">
+                <input type="text" name="username" lay-verify="required" class="userName" placeholder="请输入用户名">
             </div>
-            <div class="psw-box">
+            <div class="psw-box layui-form-item">
                 <i class="iconfont  icon-mima"></i>
-                <input type="text" class="userName" placeholder="请输入密码">
+                <input type="password" name="password" lay-verify="required|psw" class="userName" placeholder="请输入密码">
             </div>
-            <div class="btn-box">
-                <input type="submit" class="btnLogin" value="登录">
+            <div class="layui-form-item">
+                <button class="btnLogin layui-btn layui-btn-fluid  layui-btn-normal" lay-submit lay-filter="formDemo">登录</button>
             </div>
             <a class="toSignUp">去注册账号</a>
         </form>
     </div>
     <div class="signUp-box">
-        <form action="" class="login-form">
+        <form class="signUp-form layui-form">
             <div class="login-title">
                 <img src="/assets/images/login_title.png" alt="">
             </div>
             <div class="SignUpUser">
                 <i class="iconfont  icon-denglu1"></i>
-                <input type="text" class="userName" placeholder="请输入用户名">
+                <input type="text" name="username" lay-verify="required" class="userName" placeholder="请输入用户名">
             </div>
             <div class="signUpPsw">
                 <i class="iconfont  icon-mima"></i>
-                <input type="text" class="userName" placeholder="请输入密码">
+                <input type="password" lay-verify="required|psw" class="textSignUpPsw" placeholder="请输入密码">
             </div>
             <div class="signUpPswAgain">
                 <i class="iconfont  icon-mima"></i>
-                <input type="text" class="btnSignUpPswAgain" placeholder="请再次输入密码">
+                <input type="password" name="password" class="textSignUpPswAgain" lay-verify="required|psw|repsw" placeholder="请再次输入密码">
             </div>
-            <div class="btn-box">
-                <input type="submit" class="btnSignUp" value="注册">
+            <div class="layui-form-item">
+                <button class="btnSignUp layui-btn layui-btn-fluid  layui-btn-normal" lay-submit lay-filter="formDemo">注册</button>
             </div>
             <a class="toLogin">去登录</a>
         </form>
     </div>
 </body>
+
+<script src="/assets/lib/layui/layui.all.js"></script>
 <script src="/assets/lib/jquery.js"></script>
+<script src="/assets/js/privateBase.js"></script>
 <script src="/assets/js/login.js"></script>
+
 
 </html>
